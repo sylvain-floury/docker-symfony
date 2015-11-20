@@ -4,6 +4,7 @@ application:
         - ./symfony:/var/www/symfony
         - ./logs/symfony:/var/www/symfony/app/logs
     tty: true
+    working_dir: /var/www/symfony
 db:
     image: mysql
     ports:
